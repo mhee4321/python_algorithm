@@ -1,3 +1,4 @@
+# O(logN)
 def binary_search(array, target, start, end):
     if start > end:
         return None
@@ -12,6 +13,7 @@ def binary_search(array, target, start, end):
 n, target = list(map(int, input().split()))
 array = list(map(int, input().split()))
 
+# list는 0부터 시작
 result = binary_search(array, target, 0, n-1)
 if result == None:
     print("원소가 존재하지 않습니다.")
