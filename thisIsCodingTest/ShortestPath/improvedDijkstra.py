@@ -9,6 +9,7 @@ start = int(input())
 graph = [[] for i in range(n+1)]
 distance = [INF] * (n+1)
 
+# 모든 간선 정보를 입력받기
 for _ in range(m):
     a,b,c = map(int, input().split())
     graph[a].append((b,c))
