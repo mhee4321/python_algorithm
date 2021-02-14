@@ -14,3 +14,5 @@ if right_sum == left_sum:
     print('LUCKY')
 else:
     print('READY')
+
+
