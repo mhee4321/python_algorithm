@@ -19,3 +19,8 @@ def solution(N, stages):
 
     answer = [i[0] for i in answer]
     return answer
+
+n = int(input())
+data = list(map(int, input().split()))
+
+solution(n, data)
