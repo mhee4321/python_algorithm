@@ -16,6 +16,7 @@ def solution(s, n):
 def solution2(s, n):
     s = list(s)
     for i in range(len(s)):
+        # 대문자이면
         if s[i].isupper():
             # ord = 문자의 아스키 코드 값을 돌려주는 함수
             # chr = 아스키 코드 값을 입력받아 그 코드에 해당하는 문자를 출력하는 함수
@@ -25,6 +26,6 @@ def solution2(s, n):
 
     return "".join(s)
 
-s = "AB"
-n = 1
-print(solution(s, n))
+s = "a B z"
+n = 4
+print(solution2(s, n))
