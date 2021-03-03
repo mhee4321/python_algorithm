@@ -21,5 +21,5 @@ def gcdlcm(a, b):
 
 n = 2
 m= 5
-print(solution(n, m))
+print(gcdlcm(n, m))
 
