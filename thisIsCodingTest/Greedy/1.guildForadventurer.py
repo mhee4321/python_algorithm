@@ -14,17 +14,31 @@
 #
 # print(result) # 총 그룹의 수 출력
 
+# n = int(input())
+# data = list(map(int, input().split()))
+# data.sort()
+#
+# answer = 0
+# count = 0
+#
+# for i in data:
+#     count += 1
+#     if count == i:
+#         answer += 1
+#         count = 0
+#
+# print(answer)
+
+
 n = int(input())
-data = list(map(int, input().split()))
-data.sort()
-
+nums = list(map(int, input().split()))
+nums.sort()
+sum = 0
 answer = 0
-count = 0
 
-for i in data:
-    count += 1
-    if count == i:
+for i in nums:
+    sum += 1
+    if sum == i:
         answer += 1
-        count = 0
-
+        sum = 0
 print(answer)

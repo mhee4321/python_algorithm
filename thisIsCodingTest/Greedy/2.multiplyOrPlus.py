@@ -12,12 +12,24 @@
 #         result *= num
 # print(result)
 
+# data = list(input())
+# answer = 1
+#
+# for i in range(0, len(data)):
+#     num = int(data[i])
+#     if num >= 0 and num <= 1:
+#         answer += num
+#     else:
+#         answer *= num
+# print(answer)
+
+
 data = list(input())
 answer = 1
 
-for i in range(0, len(data)):
+for i in range(len(data)):
     num = int(data[i])
-    if num >= 0 and num <= 1:
+    if num == 0:
         answer += num
     else:
         answer *= num
