@@ -1,4 +1,4 @@
-# isalpha(), isdigit() 사용
+# isalpha(), isdigit() 사용, isalnum() -> 알파벳 또는 숫자인지 확인
 # ''.join 사용시 모든 문자열 str 형태여야 함
 
 n = input()
