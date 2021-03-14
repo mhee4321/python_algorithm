@@ -56,7 +56,7 @@ def dfs(count):
                 dfs(count)
                 data[i][j] = 0
                 count -= 1
-# 울타리 수가 0일때부타 시작
+# 울타리 수가 0일때부턴 시작
 dfs(0)
 print(result)
 

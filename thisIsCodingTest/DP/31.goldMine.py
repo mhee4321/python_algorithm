@@ -7,7 +7,7 @@ for tc in range(int(input())):
     dp = []
     index = 0
     for i in range(n):
-        dp.append(array[index : index+m])
+        dp.append(array[index: index+m])
         index += m
 
     # 다이나믹 프로그래밍 진행
