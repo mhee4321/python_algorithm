@@ -10,6 +10,15 @@ for tc in range(int(input())):
         dp.append(array[index: index+m])
         index += m
 
+    # # 행별로 이동
+    # for j in range(1, m):
+    #     for i in range(n):
+    #         print(dp[i][j])
+    # # 열별로 이동
+    # for i in range(n):
+    #     for j in range(1, m):
+    #         print(dp[i][j])
+
     # 다이나믹 프로그래밍 진행
     for j in range(1, m):
         for i in range(n):
