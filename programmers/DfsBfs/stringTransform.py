@@ -28,3 +28,8 @@ def solution(begin, target, words):
                 queue.append(next_word)
 
     return dist.get(target, 0)
+
+begin = "hit"
+target = "cog"
+words = ["hot", "dot", "dog", "lot", "log", "cog"]
+print(solution(begin, target, words))
