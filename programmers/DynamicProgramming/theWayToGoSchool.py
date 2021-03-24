@@ -1,12 +1,19 @@
 def solution(m, n, puddles):
-    puddles = set([(y - 1, x - 1) for x, y in puddles])
-    dist = [[0] * (m) for _ in range(n)]
+    answer = 0
+    d = [[0]*(m+1) for _ in range(n+1)]
+    d[1][0] = 1
 
-    for i in range(n):
-        for j in range(m):
-            if i == 0 and j == 0:
-                dist[i][j] = 1
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            if [j,i] in puddles:
+                d[i][j] = 0
             else:
-                dist[i][j] = 0 if (i, j) in puddles else dist[i - 1][j] + dist[i][j - 1]
+                # 왼쪽 + 위쪽
+                d[i][j] = (d[i-1][j]+d[i][j-1])%1000000007
 
-    return dist[n - 1][m - 1] % 1000000007
+    return d[n][m]
+
+m = 4
+n = 3
+puddles = [[2, 2]]
+print(solution(m, n, puddles))
