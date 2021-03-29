@@ -31,7 +31,6 @@ result_list = []
 
 
 def solve(num_list, calc_dict):
-    print(num_list, calc_dict)
     if (len(num_list) == 1):
         print('end')
         result_list.append(num_list[0])
