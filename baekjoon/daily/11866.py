@@ -1,3 +1,4 @@
+# 요세푸스 순열
 from collections import deque
 
 n, k = map(int, input().split())
