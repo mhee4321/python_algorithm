@@ -1,4 +1,5 @@
 # 케빈칙 베이컨의 6단계 법칙
+# graph
 import sys
 
 INF = sys.maxsize
