@@ -1,3 +1,5 @@
+# 에라토스테네스의 체
+
 def era(N):
     ck, p = [False for _ in range(N+1)], []
     for i in range(2, N+1):
