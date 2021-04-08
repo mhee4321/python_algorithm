@@ -1,7 +1,6 @@
 import heapq as hq
 
 def solution(scoville, K):
-
     hq.heapify(scoville)
     answer = 0
     while True:

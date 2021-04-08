@@ -1,6 +1,5 @@
 import heapq
 
-
 def solution(operations):
     count = 0
     stack_result = []

@@ -1,4 +1,3 @@
-
 def solution(genres, plays):
     answer = [] #배열array, 들어가는 원소의 종류가 다양할 때
     dic1 = {} #dictionary {"mouse" : 3, "penguin" :5} () : tuple 들어가는 원소의 종류가 동일할 때

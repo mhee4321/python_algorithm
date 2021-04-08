@@ -1,7 +1,5 @@
 def solution(n):
-
     three = ''
-
     # 3진법 변환
     while n>2 :
         # 몫, 나머지
